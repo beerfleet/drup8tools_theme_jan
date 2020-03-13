@@ -14,6 +14,15 @@ function jan_mint_preprocess_input(&$variables) {
 }
 
 /**
+  * Implements hook_preprocess_input().
+ */
+function jan_mint_preprocess_submit(&$variables) {
+  $variables['attributes']['class'][] = 'btn btn-primary';
+}
+
+
+
+/**
  * Implements hook_preprocess_html().
  */
 function jan_mint_preprocess_html(&$variables) {
